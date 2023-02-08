@@ -30,7 +30,7 @@ function Table() {
 
   // Make the list sortable alphabetically by name (ascending, descending).
   const handleSortAlpha = () => {
-    const sortedCountries = filteredCountries.sort((a, b) => {
+    const sortedCountries = allCountries.sort((a, b) => {
       if (sortAlphabet === 'asc') {
         return a.name.localeCompare(b.name);
       } else {
@@ -72,7 +72,7 @@ function Table() {
     setFilteredCountries(filteredData);
   };
 
-  // Paginnation
+  // Paginnation logic
   const lastCountryIndex = currentPage * countriesPerPage;
   const firstPostIndex = lastCountryIndex - countriesPerPage;
   const currentCountries = filteredCountries.slice(
@@ -82,8 +82,8 @@ function Table() {
 
   return (
     <div>
-      <div className="container mx-auto">
-        <h1 className="text-2xl font-bold mb-4">Country List</h1>
+      <div className="container mx-auto py-4">
+        <h1 className="text-2xl font-bold mb-4 text-center">Country List</h1>
         <div className="flex justify-between mb-4">
           <div className="flex justify-between gap-4">
             <button
@@ -92,6 +92,7 @@ function Table() {
             >
               Sort by Name
             </button>
+
             <button
               className="btn btn-blue btn btn-blue border border-1 p-2 rounded-md hover:bg-green-200"
               onClick={handleSortRegion}
@@ -127,14 +128,7 @@ function Table() {
                   country={country.name}
                   region={country.region}
                   area={country.area}
-                  // setCurrentPage={setCurrentPage}
-                  // currentPage={currentPage}
                 />
-                // <tr key={country.name} className="border-b text-center">
-                //   <td className="p-4 text-red-400">{country.name}</td>
-                //   <td className="p-4">{country.region}</td>
-                //   <td className="p-4">{country.area}</td>
-                // </tr>
               );
             })}
           </tbody>

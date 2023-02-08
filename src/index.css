@@ -7,7 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.tb-row:nth-child(even) {
+  @apply bg-gray-300;
+}
+.tb-row:nth-child(odd) {
+  @apply bg-white;
 }

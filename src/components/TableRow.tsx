@@ -9,8 +9,8 @@ type countryProps = {
 function TableRow(props: countryProps) {
   const { country, region, area } = props;
   return (
-    <tr className="border-b text-center">
-      <td className="p-4 text-red-400">{country}</td>
+    <tr className="tb-row border-b text-center text-black hover:bg-green-200">
+      <td className="p-4">{country}</td>
       <td className="p-4">{region}</td>
       <td className="p-4">{area}</td>
     </tr>

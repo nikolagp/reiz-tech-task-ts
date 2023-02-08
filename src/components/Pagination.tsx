@@ -10,18 +10,22 @@ function Pagination(props: CountriesProps) {
   let pages = [];
 
   for (
-    let i = 0;
-    i < Math.ceil(props.allCountries / props.countriesPerPage);
+    let i = 1;
+    i < Math.floor(props.allCountries / props.countriesPerPage + 1);
     i++
   ) {
     pages.push(i);
   }
 
   return (
-    <div>
+    <div className="text-center flex flex-wrap justify-center gap-1 my-4">
       {pages.map((page, i) => {
         return (
-          <button key={i} onClick={() => props.setCurrentPage(page)}>
+          <button
+            key={i}
+            className="p-3 border border-1 border-gray-300"
+            onClick={() => props.setCurrentPage(page)}
+          >
             {page}
           </button>
         );
