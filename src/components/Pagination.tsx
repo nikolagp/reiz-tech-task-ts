@@ -23,7 +23,7 @@ function Pagination(props: CountriesProps) {
         return (
           <button
             key={i}
-            className="p-3 border border-1 border-gray-300"
+            className="p-3 border border-1 border-gray-300 hover:bg-green-200"
             onClick={() => props.setCurrentPage(page)}
           >
             {page}
