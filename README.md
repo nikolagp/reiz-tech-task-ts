@@ -1,5 +1,7 @@
 # ReizTech Task - Filterable Country List
 
+![Filterable List of Countries](https://github.com/nikolagp/reiz-tech-task-ts/blob/main/public/reiz-tech-task.png?raw=true "Filterable List of Countries Cover")
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
