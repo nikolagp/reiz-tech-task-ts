@@ -2,6 +2,8 @@
 
 ![Filterable List of Countries](https://github.com/nikolagp/reiz-tech-task-ts/blob/main/public/reiz-tech-task.png?raw=true "Filterable List of Countries Cover")
 
+Check it out deployed: https://reiz-tech-task-ts.vercel.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
