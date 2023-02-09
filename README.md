@@ -29,7 +29,7 @@ While I was building the app I learned how to use React with TypeScript. Previou
 
 ## What issues have I faced and how I resolved them
 
-Most challenging part was using the TypeScript in combination with React. Especially when you sending events as a props since React uses its own event system. Another challenge related to this was adding the pagination. But as one of the top 3 JS libraries/frameworks along with Vue and Angular, it's not very hard to find a solution on Stackoverflow, YouTube or blogs by developers if you know how to ask properly. Not only Google but chatGPT can be helpful as well, especially for errors in the console.
+Most challenging part was using the TypeScript in combination with React. Especially when you sending events as a props since React uses its own event system. Another challenge related to this was adding the pagination. But as one of the top 3 JS libraries/frameworks along with Vue and Angular, it's not very hard to find a hint on Stack Overflow, YouTube or blogs writen by developers, if you know how to ask properly. Not only Google but chatGPT can be helpful as well, especially for errors in the console.
 
 ## Source
 
