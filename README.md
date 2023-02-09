@@ -1,6 +1,6 @@
 # ReizTech Task - Filterable Country List
 
-
+![Filterable List of Countries](https://github.com/nikolagp/reiz-tech-task-ts/blob/main/public/reiz-tech-task.jpg?raw=true "Filterable List of Countries Cover")
 
 Check it out deployed: https://reiz-tech-task-ts.vercel.app/
 
