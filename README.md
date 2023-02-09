@@ -6,45 +6,31 @@ Check it out deployed: https://reiz-tech-task-ts.vercel.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This is a small app created with React as a JS library for UI, where you can filter the countries by Name and Region (ascending and descending), and also to see the countries in Oceania and countries smaller than Lithuania by area. To style the components I used TailwindCSS. To take a step further in my challenge I used TypeScript. And Axios for fetching data from the API RestCountries.
 
-In the project directory, you can run:
+## Technologies in use / Tech Stack / Built with
 
-### `npm start`
+  - TypeScript
+  - React
+  - TailwindCSS
+  - Axios
+  - Vercel
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To install the Country List locally, please follow the steps below:
+  - Clone repo to your machine
+  - Open the root of the project and install all dependencies with `npm install`
+  - To run the local version `npm start`
 
-### `npm test`
+## What I have learned
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+While I was building the app I learned how to use React with TypeScript. Previously I have built small projects with React and TypeScript separatelly, but never a combination of both.
 
-### `npm run build`
+## What issues have I faced and how I resolved them
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Most challenging part was using the TypeScript in combination with React. Especially when you sending events as a props since React uses its own event system. But as one of the top 3 JS libraries/frameworks along with Vue and Angular, it's not very hard to find a solution on Stackoverflow, YouTube or blogs by developers if you know how to ask properly. Not only Google but chatGPT can be helpful as well, especially for errors in the console.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Source
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Reiz Tech
