@@ -82,7 +82,7 @@ function Table() {
 
   return (
     <div>
-      <div className="container py-4 mx-auto">
+      <div className="container py-4 mx-auto min-h-[92vh]">
         <h1 className="mb-4 text-2xl font-bold text-center">Country List</h1>
         <div className="flex justify-between mb-4">
           <div className="flex justify-between gap-4">
@@ -117,7 +117,9 @@ function Table() {
             <tr className="text-white">
               <th className="w-1/3 p-4">Name</th>
               <th className="w-1/3 p-4">Region</th>
-              <th className="w-1/3 p-4">Area</th>
+              <th className="w-1/3 p-4">
+                Area (km<sup>2</sup>)
+              </th>
             </tr>
           </thead>
           <tbody>
