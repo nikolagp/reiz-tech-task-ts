@@ -9,7 +9,7 @@ type countryProps = {
 function TableRow(props: countryProps) {
   const { country, region, area } = props;
   return (
-    <tr className="tb-row border-b text-center text-black hover:bg-green-200">
+    <tr className="text-center text-black border-b tb-row hover:bg-green-200">
       <td className="p-4">{country}</td>
       <td className="p-4">{region}</td>
       <td className="p-4">{area}</td>

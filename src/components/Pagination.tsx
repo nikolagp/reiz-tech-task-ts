@@ -4,6 +4,7 @@ type CountriesProps = {
   allCountries: number;
   countriesPerPage: number;
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
+  currentPage: number;
 };
 
 function Pagination(props: CountriesProps) {
@@ -18,12 +19,16 @@ function Pagination(props: CountriesProps) {
   }
 
   return (
-    <div className="text-center flex flex-wrap justify-center gap-1 my-4">
+    <div className="flex flex-wrap justify-center my-4 text-center">
       {pages.map((page, i) => {
         return (
           <button
             key={i}
-            className="p-3 border border-1 border-gray-300 hover:bg-green-200"
+            className={
+              page === props.currentPage
+                ? 'bg-green-200 p-2 border border-gray-300 border-1 hover:bg-green-200 active:bg-slate-800'
+                : 'p-2 border border-gray-300 border-1 hover:bg-green-200'
+            }
             onClick={() => props.setCurrentPage(page)}
           >
             {page}

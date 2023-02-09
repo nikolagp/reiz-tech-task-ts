@@ -8,7 +8,7 @@ body {
 }
 
 .tb-row:nth-child(even) {
-  @apply bg-gray-300;
+  @apply bg-gray-100;
 }
 .tb-row:nth-child(odd) {
   @apply bg-white;

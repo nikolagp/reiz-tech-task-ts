@@ -82,19 +82,19 @@ function Table() {
 
   return (
     <div>
-      <div className="container mx-auto py-4">
-        <h1 className="text-2xl font-bold mb-4 text-center">Country List</h1>
+      <div className="container py-4 mx-auto">
+        <h1 className="mb-4 text-2xl font-bold text-center">Country List</h1>
         <div className="flex justify-between mb-4">
           <div className="flex justify-between gap-4">
             <button
-              className="btn btn-blue border border-1 p-2 rounded-md hover:bg-green-200"
+              className="p-2 border rounded-md btn btn-blue border-1 hover:bg-green-200"
               onClick={handleSortAlpha}
             >
               Sort by Name
             </button>
 
             <button
-              className="btn btn-blue btn btn-blue border border-1 p-2 rounded-md hover:bg-green-200"
+              className="p-2 border rounded-md btn btn-blue border-1 hover:bg-green-200"
               onClick={handleSortRegion}
             >
               Sort by Region
@@ -102,14 +102,14 @@ function Table() {
           </div>
           <div className="relative">
             <select
-              className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+              className="block w-full px-4 py-2 pr-8 leading-tight bg-white border border-gray-400 rounded shadow appearance-none hover:border-gray-500 focus:outline-none focus:shadow-outline"
               onChange={handleFilter}
             >
               <option value="all">All</option>
               <option value="area">Area smaller than Lithuania</option>
               <option value="region">Oceania</option>
             </select>
-            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"></div>
+            <div className="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pointer-events-none"></div>
           </div>
         </div>
         <table className="w-full border-collapse">
@@ -137,6 +137,7 @@ function Table() {
           allCountries={allCountries.length}
           countriesPerPage={countriesPerPage}
           setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
         />
       </div>
     </div>
